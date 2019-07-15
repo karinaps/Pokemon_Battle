@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RESULT</title>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="{{ url_for('static', filename='1.css') }}"
+    />
+    <link
+    
+    
+    />
+</head>
+<body>
+    <center>
+        <img
+            src="https://cdn.bulbagarden.net/upload/3/3c/Season8_logo.png"
+        />
+    </center>
+    
+    
+    <h1>
+        <center>
+            {{nama1}}
+            <img src="{{gambar1}}" alt="{{gambar1}}" width='200'>
+            {{nama2}}
+            <img src="{{gambar2}}" alt="{{gambar2}}" width='200'>
+        </center>
+    </h1>
+   
+    <h2>
+        <center>
+            <h3>
+                <b>{{proba}}% {{winner}} Wins !</b>
+
+            </h3>
+
+        </center>
+    </h2>
+    <center>
+        <form action="http://localhost:5000/">
+            <p> 
+            <input type="submit" value="Go Back">
+            </p>
+        </form>
+    </center>
+</body>
+</html>
