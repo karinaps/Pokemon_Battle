@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RESULT</title>
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="{{ url_for('static', filename='1.css') }}"
-    />
-    <link
-    
-    
-    />
+    <link rel="stylesheet" type="text/css" href="../static/1.css">
 </head>
 <body>
-    <center>
-        <img
-            src="https://cdn.bulbagarden.net/upload/3/3c/Season8_logo.png"
-        />
-    </center>
-
-    <h1>
+    <h1 style="color:green;font-size:50px">
         <center><b>
             <img src="{{x[2]}}" alt="{{x[0]}}" style="height:200px;width:200px"> {{x[0]}}  VS  {{x[1]}} <img src="{{x[3]}}" alt="{{x[1]}}" style="height:200px;width:200px">
         </b></center>
     </h1>
-        <center>
-            <img src="{{x[5]}}" width="850" height="500">
-        </center>
+    <center>
+    <img src="{{x[5]}}" width="850" height="500">
+    </center>
     <h1>
         <center>
             {{x[4]}}
         </center>
     </h1>
-
+    <br>
     <center>
         <form action="http://localhost:5000/">
             <p> 
-                <input type="submit" value="Go Back">
+            <input type="submit" value="Kembali">
             </p>
         </form>
     </center>
